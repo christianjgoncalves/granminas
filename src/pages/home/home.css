@@ -1,0 +1,21 @@
+body {
+    background-color: #000;
+}
+
+.home__title-box {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.home-title {
+    color: #fff;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.home-subtitle {
+    font-weight: 300;
+}

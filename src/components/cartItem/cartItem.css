@@ -1,0 +1,134 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.cart-item-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #6366f1;
+}
+
+.cart-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cart-item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.cart-item-type {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+}
+
+.cart-item-price {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.cart-item-stock {
+    font-size: 12px;
+    color: #10b981;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.cart-item-btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.cart-item-btn:hover {
+    background-color: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+.cart-item-btn:active {
+    transform: scale(0.95);
+}
+
+.cart-item-input {
+    width: 50px;
+    height: 32px;
+    text-align: center;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+.cart-item-input:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+.cart-item-btn-delete {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    margin-left: 4px;
+}
+
+.cart-item-btn-delete:hover {
+    background-color: #fee2e2;
+    border-color: #ef4444;
+}
+
+.cart-item-image {
+    width: 180px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .cart-item-image {
+        width: 100%;
+        height: 150px;
+    }
+}

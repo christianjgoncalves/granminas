@@ -1,0 +1,79 @@
+.product-page-banner {
+    height: 50vh;
+    width: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.product-page-info {
+    background-color: #000; 
+    color: #fff; 
+    padding: 40px 5%;
+    min-height: calc(100vh - 60vh - 100px); 
+}
+
+.product-page-info p {
+    margin: 5px 0; 
+    font-size: 16px;  
+}
+
+.product-page-info h3 {
+    margin: 10px 0; 
+    font-size: 30px;  
+}
+
+.product-page-buttons {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+   
+    background-color: #fff; 
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+    
+    display: flex;
+    gap: 100px; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.product-page-buttons button {
+    border: none; 
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 100px;
+    width: 300px;
+    border: 2px solid #000;
+}
+
+.product-page-buttons button:first-child {
+    background-color: #fff; 
+    color: #000;
+}
+
+.product-page-cart-icon {
+    color: #000; 
+}
+
+.product-page-buttons button:last-child {
+    background-color: #000; 
+    color: #fff;
+}
+
+.product-page-buttons button:first-child:hover {
+    background-color: #f0f0f0;
+}
+
+.product-page-buttons button:last-child:hover {
+    background-color: #333;
+}

@@ -1,0 +1,136 @@
+const PRODUCTS = [
+    {
+        id: 1,
+        nome: "Caminhão de mineração Komatsu 960E",
+        tipo: "Caminhão",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Caminhão de Mineração/Caminhão de Mineração Komatsu 960E.png",
+        backgroundUrl: "/BackGround Catálogo/960e-fundo.jpg"
+    },
+    {
+        id: 2,
+        nome: "Caminhão de mineração Komatsu 980E",
+        tipo: "Caminhão",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Caminhão de Mineração/Caminhão de Mineração Komatsu 980E.png",
+        backgroundUrl: "/BackGround Catálogo/980e-fundo.jpg"
+    },
+    {
+        id: 3,
+        nome: "Caminhão de mineração Komatsu 830E",
+        tipo: "Caminhão",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Caminhão de Mineração/Caminhão de Mineração Komatsu 830E.png",
+        backgroundUrl: "/BackGround Catálogo/830e-fundo.jpg"
+    },
+    {
+        id: 4,
+        nome: "Caminhão de mineração Komatsu HD605",
+        tipo: "Caminhão",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Caminhão de Mineração/Caminhão de Mineração Komatsu HD605.png",
+        backgroundUrl: "/BackGround Catálogo/HD605-fundo.jpg"
+    },
+    {
+        id: 5,
+        nome: "Escavadeira Minera Komatsu PC8000",
+        tipo: "Escavadeira",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Escavadeira Minera Komatsu/Escavadeira Minera Komatsu PC8000.png",
+        backgroundUrl: "/BackGround Catálogo/pc8000-fundo.jpg"
+    },
+    {
+        id: 6,
+        nome: "Escavadeira Minera Komatsu PC5500",
+        tipo: "Escavadeira",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Escavadeira Minera Komatsu/Escavadeira Minera Komatsu PC5500.png",
+        backgroundUrl: "/BackGround Catálogo/pc5500-fundo.JPG"
+    },
+    {
+        id: 7,
+        nome: "Escavadeira Minera Komatsu PC3400",
+        tipo: "Escavadeira",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Escavadeira Minera Komatsu/Escavadeira Minera Komatsu PC3400.png",
+        backgroundUrl: "/BackGround Catálogo/pc3400-fundo.jpg"
+    },
+    {
+        id: 8,
+        nome: "Escavadeira Minera Komatsu PC2000",
+        tipo: "Escavadeira",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Escavadeira Minera Komatsu/Escavadeira Minera Komatsu PC2000.png",
+        backgroundUrl: "/BackGround Catálogo/pc2000-fundo.png"
+    },
+    {
+        id: 9,
+        nome: "Carregadeira de Rodas WA1200",
+        tipo: "Carregadeira",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Carregadeira de Rodas/Carregadeira de Rodas WA1200.png",
+        backgroundUrl: "/BackGround Catálogo/WA1200-fundo.jpg"
+    },
+    {
+        id: 10,
+        nome: "Carregadeira de Rodas WA900",
+        tipo: "Carregadeira",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Carregadeira de Rodas/Carregadeira de Rodas WA900.png",
+        backgroundUrl: "/BackGround Catálogo/WA900-fundo.jpg"
+    },
+    {
+        id: 11,
+        nome: "Carregadeira de Rodas WA430",
+        tipo: "Carregadeira",
+        preco: 200,
+        motor: "Komatsu SAA6D170E-5",
+        potencia: "739 HP",
+        peso: 110.180,
+        capacidade: 63.000,
+        url: "/Catálogo/Carregadeira de Rodas/Carregadeira de Rodas WA430.png",
+        backgroundUrl: "/BackGround Catálogo/wa430-fundo.jpg"
+    },
+]
+
+export default PRODUCTS
