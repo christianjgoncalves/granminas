@@ -4,6 +4,7 @@ import PRODUCTS from "../../PRODUCTS"
 import Hero from '../../components/hero/hero'
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';
+import Footer from '../../components/footer/footer';
 
 function Home() {
     const location = useLocation();
@@ -49,6 +50,7 @@ function Home() {
             {PRODUCTS.map((product) => {
                 if (product.tipo == "Carregadeira") return <ProductCard product={product} key={product.id}/>
             })}
+            <Footer />
         </>
     )
 }

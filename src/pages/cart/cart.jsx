@@ -3,8 +3,11 @@ import ShopContext from '../../context/shop-context'
 import { useContext, useState } from 'react'
 import PRODUCTS from '../../PRODUCTS'
 import CartItem from '../../components/cartItem/cartItem'
+import { useNavigate } from 'react-router'
+import Footer from '../../components/footer/footer'
 
 function Cart() {
+    const navigate = useNavigate()
     const { cartItems, deleteItem } = useContext(ShopContext)
     const [selectedItems, setSelectedItems] = useState({})
 
@@ -47,11 +50,6 @@ function Cart() {
 
     // Conta quantos itens estão selecionados
     const selectedCount = Object.values(selectedItems).filter(Boolean).length
-
-    const handleFinalizePurchase = () => {
-        // Lógica para finalizar a compra
-        alert('Finalizando compra...')
-    }
 
     return (
         <div className="cart-page">
@@ -110,13 +108,14 @@ function Cart() {
                     <div className="cart-footer-container">
                         <button 
                             className="finalize-btn"
-                            onClick={handleFinalizePurchase}
+                            onClick={() => navigate("/checkout")}
                         >
                             Finalizar Compra
                         </button>
                     </div>
                 </div>
             )}
+            <Footer />
         </div>
     )
 }

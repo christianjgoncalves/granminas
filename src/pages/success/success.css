@@ -1,0 +1,153 @@
+.success-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+.success-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.success-icon-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.success-icon-wrapper svg {
+    color: #333333;
+}
+
+.check-badge {
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    background-color: #10b981;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: checkPop 0.5s ease-out 0.3s backwards;
+}
+
+.check-badge svg {
+    color: #ffffff;
+}
+
+@keyframes checkPop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.success-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    margin: 0;
+    line-height: 1.4;
+    max-width: 500px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.success-logo {
+    width: 280px;
+    height: auto;
+    filter: invert(1);
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .success-page {
+        padding: 30px 20px;
+    }
+
+    .success-container {
+        gap: 40px;
+    }
+
+    .success-icon-wrapper svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .check-badge {
+        width: 36px;
+        height: 36px;
+    }
+
+    .check-badge svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .success-title {
+        font-size: 20px;
+    }
+
+    .success-logo {
+        width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .success-container {
+        gap: 35px;
+    }
+
+    .success-icon-wrapper svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .check-badge {
+        width: 32px;
+        height: 32px;
+    }
+
+    .check-badge svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .success-title {
+        font-size: 18px;
+    }
+
+    .success-logo {
+        width: 180px;
+    }
+}

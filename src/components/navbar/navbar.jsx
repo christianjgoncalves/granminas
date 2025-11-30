@@ -64,7 +64,7 @@ function Navbar() {
                         </div>
                     )}
                 </div>
-                <a href="https://wa.me/553185464249" target="_blank" rel="noopener noreferrer">SUPORTE</a>
+                <Link to="/redirect-suporte">SUPORTE</Link>
                 <Link to="/cart">
                     <FiShoppingCart className="cart-icon" size={20} />
                 </Link>

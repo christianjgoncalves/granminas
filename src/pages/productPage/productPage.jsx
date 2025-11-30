@@ -4,10 +4,12 @@ import PRODUCTS from '../../PRODUCTS'
 import { FiShoppingCart } from "react-icons/fi";
 import { useContext } from 'react';
 import ShopContext from '../../context/shop-context';
+import { useNavigate } from 'react-router';
 
 function ProductPage() {
     const { id } = useParams()
     const { addToCart, cartItems } = useContext(ShopContext)
+    const navigate = useNavigate()
 
     const getProduct = id => { // função para conseguir o produto com o respectivo id
         for (let product of PRODUCTS) {
@@ -32,7 +34,10 @@ function ProductPage() {
             </div>
             <div className="product-page-buttons">
                 <button onClick={() => addToCart(product.id)}>Adicionar a Lista <FiShoppingCart className="product-page-cart-icon" size={20} /> {cartItems[product.id] > 0 && `(${cartItems[product.id]})`} </button>
-                <button onClick={() => addToCart(product.id)}>CONTRATAR AGORA</button>
+                <button onClick={() => {
+                    addToCart(product.id)
+                    navigate('/cart')
+                }}>CONTRATAR AGORA</button>
             </div>
         </>
     )
