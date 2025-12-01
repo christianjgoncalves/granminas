@@ -7,7 +7,7 @@ function Hero() {
       <div className="hero-background"></div>
       
       <div className="hero-content">
-        <Link to="/redirect-suporte" className="hero-button">CONTRATAR AGORA.</Link>
+        <p>Ajuste a <b>Potência</b> á Sua <b>Demanda</b>.</p>
       </div>
     </section>
   );
